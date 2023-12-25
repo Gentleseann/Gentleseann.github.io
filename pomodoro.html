@@ -51,18 +51,53 @@
 <body>
 <h1 id="mainText">Pomodoro</h1>
 <div id="bigRect">
-    <span id="duration">300</span><br>
-    <button id="start" class="buttons">Start</button>
-    <button id="stop" class="buttons">Stop</button>
+    <span id="duration">10</span><br>
+    <button id="first" class="buttons">Start</button>
+    <button id="second" class="buttons">Stop</button>
 </div>
 
 
 <script>
     var duration = document.getElementById("duration");
+    var start = document.getElementById("first");
+    var down = null;
+
     var countDown = function(){
-    second.textContent = parseFloat(duration.textContent) - 1;
+    var timeLeft = parseFloat(duration.textContent);
+    if (timeLeft >0){
+        duration.textContent = timeLeft - 1;
+        }else{
+            window.clearInterval(down);
+        }
     };
-    window.setInterval(countDown, 1000);
+    var second = document.getElementById("second");
+    first.addEventListener("click", function(){
+        if(!down){
+            down = setInterval(countDown, 1000);
+            first.textContent = "Pause";
+            second.textContent = "Stop";
+            //second.id = "stop";   
+        }else{
+            clearInterval(down);
+            down = null;
+            first.textContent = "Resume";
+            second.textContent = "Done";
+            second.id = "done";
+        }
+    });
+    //var stop = document.getElementById("stop");
+    //stop.addEventListener("click", function(){
+    //    duration.textContent = 10;
+        
+    //})
+
+    var stop = document.getElementById("second");
+    second.addEventListener("click", function(){
+        duration.textContent = 10;
+        window.clearInterval(down);
+        first.textContent = "Start";
+        down = null;
+    })
 </script>
 </body>
 </html>
