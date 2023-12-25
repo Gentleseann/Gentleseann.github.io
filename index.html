@@ -5,12 +5,11 @@
     <title>Task Manager</title>
     <style>
         body{
-        background-color: white;
+        background-color: #001f3f;
         margin: 0;
         padding: 0;
         font-family: sans-serif;
         overflow: hidden;
-        background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2012/09/10/13853/bac795c7b3b215ca5e868d5085f1710a-700.jpg");
         }
 
         nav{
@@ -20,6 +19,7 @@
         line-height: 60px;
         position: fixed;
         top: 0;
+        z-index: 1;
 
         }
 
@@ -46,11 +46,11 @@
         font-size: 28px;
         }
 
-        #logo{
+        #clock{
         height: 50px;
         margin: 20px 0px;
         float: left;
-        margin-left: 20px;
+        margin-left: 25px;
         }
 
         #pomodoroText{
@@ -65,14 +65,31 @@
         width: 31%;
         height: 83.5vh;
         display: inline-block;
-        border-radius: 15px;
-        background-color: white;
+        border-radius: 20px;
+        background-color: black;
         color: black;
         text-align: center;
-        line-height: 100px; /* Center text vertically */
-        border: 2px solid black;
-        margin: 120px 1%;
+        border: 2px solid #001f3f;
+        margin: 120px 1.06%;
         padding: 0;
+        -webkit-animation: floatDown 1s cubic-bezier(0.4, 0.6, 0.2, 1);
+        }
+
+        @-webkit-keyframes floatDown {
+    from {
+        transform: translateY(-1200px); /* Initial position, adjust as needed */
+    }
+    to {
+        transform: translateY(0);
+        }
+    }
+
+        @media (max-width: 800px) {
+            .rects {
+                width: 80%; /* Adjust the width for smaller screens */
+                display: block; /* Stack rectangles on top of each other */
+                margin: 20px auto; /* Center the stacked rectangles */
+            }
         }
 
         #rect1{
@@ -87,14 +104,14 @@
         }
 
         .contentTitle{
-        color: black;
-        margin-top: 160px;
+        color: white;
+        margin-top: 60px;
         }
 
         .pomodoroShortcut{
         color: white;
         font-size: 25px;
-        font-family: 'Baskerville', serif;
+        font-family: serif;
         font-weight: bold;
         margin: 10px;
         }
@@ -104,10 +121,13 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="https://store-images.s-microsoft.com/image/apps.61549.13695741898563888.a55c84af-2860-4662-8505-864b03df8b0d.88ae2bb4-e5dc-4d8a-8f90-c855ff00754d">
-            <h1 id="myPlannerText">Task Manager</h1>
+            <a href="index.html">
+                <img id="clock" src="https://store-images.s-microsoft.com/image/apps.61549.13695741898563888.a55c84af-2860-4662-8505-864b03df8b0d.88ae2bb4-e5dc-4d8a-8f90-c855ff00754d">
+                <h1 id="myPlannerText">Task Manager</h1>
+            </a>
+
             <ul>
-                <li><a href="" id="pomodoroText">Pomodoro</a></li>
+                <li><a href="pomodoro.html" id="pomodoroText">Pomodoro</a></li>
                 <li><a href="" class="pomodoroShortcut">120</a></li>
                 <li><a href="" class="pomodoroShortcut">90</a></li>
                 <li><a href="" class="pomodoroShortcut">60</a></li>

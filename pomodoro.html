@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro</title>
+    <style>
+
+        #mainText{
+        border-bottom: 2px solid #001f3f;
+        margin: 0 10px;;
+        }
+
+        #bigRect {
+        width: 50%;
+        height: 25vh;
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #001f3f;
+        color: black;
+        border: 2px solid #001f3f;
+        margin: 40px auto;
+        padding: 5vh;
+        }
+
+        #duration{
+        font-size: 90px;
+        color: white;
+        }
+
+        .buttons{
+        display: inline-block;
+        margin: 5vh;
+        border: 1px solid white;
+        color: white;
+        background-color: #001f3f;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+        width: 250px;
+        font-size: 30px;
+
+        }
+
+        .buttons:hover{
+        background-color: #003366
+        }
+
+    </style>
+</head>
+<body>
+<h1 id="mainText">Pomodoro</h1>
+<div id="bigRect">
+    <span id="duration">300</span><br>
+    <button id="start" class="buttons">Start</button>
+    <button id="stop" class="buttons">Stop</button>
+</div>
+
+
+<script>
+    var duration = document.getElementById("duration");
+    var countDown = function(){
+    second.textContent = parseFloat(duration.textContent) - 1;
+    };
+    window.setInterval(countDown, 1000);
+</script>
+</body>
+</html>
