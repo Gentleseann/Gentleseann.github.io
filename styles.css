@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: cursive;
+}
+
+h1{
+  font-size: 40px;
+  padding-top: 1em;
+  padding-bottom: 0;
+  color: rgb(24, 110, 197)
+}
+
+p{
+  padding-top: 0;
+}
+
+h1, p{
+  text-align: center;
+  font-family: 'Comic Sans MS' ,cursive;
+}
+
+#container{
+  background-color: rgba(217, 232, 241, 0.5);
+  color: black; 
+  width: 40%;
+  margin: auto;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+form{
+  width:100%;
+  margin: 0 auto;
+}
+
+fieldset{
+  margin: 20px;
+  border: none;
+}
+
+legend{
+  font-family: cursive;
+  width: 80%;
+  font-size: 20px;
+  margin: 1em 0;
+}
+
+.color{
+  display: block;
+}
+
+label{
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+
+input[type="checkbox"]{
+  width: auto;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: scale(2);
+  margin: 0.5em;
+}
+
+input, textarea{
+  margin: 0.5em 0 0 0;
+  width: 100%;
+  background-color: rgb(216, 241, 243);
+  height: 2em;
+  color: rgb(3, 45, 129);
+  font-size: 1em;
+  border: 1px solid rgb(19, 73, 135);
+}
+
+textarea{
+  height: 8em;
+  
+}
+
+/*input[type="submit"]{
+  margin: 2em auto;
+  background-color:  rgb(3, 6, 171);
+  font-family: cursive;
+  padding-bottom: 0.5em;
+  width: 60%;
+  color: white;
+  margin-bottom: 1em;
+}*/
+
+input[type="file"]{
+    padding: 2px 2px;
+}
+
+#terms-and-conditions{
+  font-size: 1em;
+}
+
+.block{
+  display: block;
+}
+
+.flower{
+  margin: 2em 0;
+  display: block;
+  text-align: center;
+}
+
+.inline{
+  display: inline;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+img{
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+#foot{
+  height: 1.5rem;
+}
+
+#submit{
+  margin: auto;
+  background-color:  rgb(3, 6, 171);
+  font-family: cursive;
+  padding: 0.5em 3em;
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  color: white;
+  margin-bottom: 1em;
+  border: solid 1px white;
+  display: block;
+  text-decoration: none;
+
+}
+
+h2{
+  color: rgb(10, 45, 80);
+  width: 80%;
+  margin: 2em 15em;
+}
