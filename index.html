@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Summer Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Summer break survey</h1>
+    <p>Thank you for taking the time to help Seann improve </p>
+    <div id="container">
+    <form method="post" action=''>
+      <fieldset>
+        <legend>Seann wonders what is</legend>
+        <label for="food">A food or snack you are craving right now: <input class="block" type="text" id="food" name="food" required>
+        <label for="place">A place you wanna visit together: <input type="text" class="block" id="place" name="place" required>
+        <label for="do">One thing you’re looking forward to doing together soon? <input class="block" type="text" id="do" name="do" required>
+      </fieldset>
+      <fieldset>
+        <legend>Your favourite color(s) (required)</legend>
+        <label for="red"><input id="red" type="checkbox" name="color" class="color" class="inline" /> Red</label><br>
+        <label for="yellow"><input id="yellow" type="checkbox" name="color" class="color" class="inline" /> Yellow</label><br>
+        <label for="green"><input id="green" type="checkbox" name="color" class="inline" class="color"/> Green</label><br>
+        <label for="blue"><input id="blue" type="checkbox" name="color" class="inline" class="color"/> Blue</label><br>
+        <label for="white"><input id="white" type="checkbox" name="color" class="inline" class="color"/> White</label><br>
+        <label for="pink"><input id="pink" type="checkbox" name="color" class="inline" class="color"/> Pink</label>
+      </fieldset>        
+      <fieldset>
+        <legend>Your favourite flower? (required)</legend>
+        <label class="flower"for="roses"><img src="https://bouqs.com/blog/wp-content/uploads/2024/02/shutterstock_368490641-min.jpg" height="250px" alt="roses">Roses<input id="roses" type="radio" name="flower" class="inline" /></label>
+        <label class="flower" for="tulips"><img src="https://www.colorblends.com/wp-content/uploads/2020/01/1505_BestPink_CGC9568sqII.jpg" height="270px" alt="tulips">Tulips<input id="tulips" type="radio" name="flower"class="flower" class="inline"  /></label>
+        <label class="flower" for="sunflower"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiRz4Mhhz5EZzqGMAXL32AbFWFwZYNnIxCA&s" height="250px" alt="sunflower">Sunflower<input id="sunflower" type="radio" name="flower" class="inline"  /></label>
+        <label class="flower" for="carnations"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkw4ZFAniU8yjTz39RsUFzjewPqEQTHlh60g&s" height="270px" alt="carnations">Carnations<input id="carnations" type="radio" name="flower" class="inline"  /></label>
+        <label class="flower" for="peonies"><img src="https://images.squarespace-cdn.com/content/v1/604c31ef22e44a51184b36cc/1654917745714-7X4NWLS0ACVX4VFO8L1E/unsplash-image-3G_tK4V4lcs.jpg" height="260px" alt="peonies">Peonies<input id="peonies" type="radio" name="flower" class="inline"  /></label>
+      </fieldset>
+      <fieldset>
+        <label for="picture">Upload your favourite picture of us: <input id="picture" type="file" name="file" /></label>
+        <label for="tell">Something you wanna tell me / wish I know during this summer break (not required):  
+          <textarea id="tell" name="tell" rows="10" cols="40" placeholder="Seann wants you to know he loves you so much and..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="terms">
+      <label for="terms-and-conditions">
+      <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I <em><strong>have read and accept</em></strong> the <a target="_blank" href="terms.html">terms and conditions.</a>
+      </label>
+      </fieldset>
+      <a id="submit" href="reward.html">Submit</a>
+    </form>
+    </div>
+  <div id="foot"></div>
+  </body>
+</html>
